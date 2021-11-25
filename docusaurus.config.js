@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/tw-developer-note/note/tree/main/',
+          editUrl: 'https://github.com/tw-developer-note/note/blob/main/',
         },
         blog: {
           showReadingTime: true,
