@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Developer note',
   tagline: 'Developers are cool',
-  url: 'https://tw-developer-note.github.io/note/',
-  baseUrl: '/',
+  url: 'https://tw-developer-note.github.io',
+  baseUrl: '/note/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/tw-developer-note/note',
+          editUrl: 'https://github.com/tw-developer-note/note/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -47,7 +47,7 @@ const config = {
         title: 'Developer Note',
         logo: {
           alt: 'DN',
-          src: 'img/logo.svg',
+          src: 'img/favicon.ico',
         },
         items: [
           {
