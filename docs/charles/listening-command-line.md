@@ -7,8 +7,8 @@ title: Listening command line
 # Charles 監聽 Command line tool 封包 (MacOS為例)
 
 開始前先至 [Charles官網下載程式](https://www.charlesproxy.com/download/latest-release/)
-
 ## Install Charles Proxy Server Certificate & Proxy Setting
+
 - `Help` -> `SSL Proxying` -> `SSL Proxying` -> `Install Charles Root Certificate`
 
 安裝完後後至 Keychain 點選信任憑證
@@ -33,20 +33,25 @@ npm config set proxy http://192.168.2.2:8888 // 你的區網IP，proxy server設
 npm config set https-proxy http://192.168.2.2:8888 // 你的區網IP，proxy server設定的port後
 ```
 
+
 暫時讓node信任 Charles 憑證，直接輸入只會暫存在工作區，關掉 terminal 後失效，也可以放入bash profile
 ```
 export NODE_EXTRA_CA_CERTS=/你的/Charles/下載後放的路徑/charles-proxy-ssl-proxying-certificate.pem
 ```
 
+
 可以開始看到 npm 的封包囉
+
 ![listening](/img/charles/charles-2.png)
+
 
 結束後可以把npm proxy給設置回去
 ```
 npm config rm proxy
 npm config rm https-proxy
 
-// 確認是否已清掉
+
+// 確認是否已清掉 proxy
 npm config get proxy
 npm config get https-proxy
 ```
