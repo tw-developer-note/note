@@ -36,7 +36,7 @@ npm config set https-proxy http://192.168.2.2:8888 // 你的本機IP，proxy ser
 
 暫時讓node信任 Charles 憑證，直接輸入只會暫存在工作區，關掉 terminal 後失效，也可以放入bash profile
 ```sh
-export NODE_EXTRA_CA_CERTS=/你的/Charles/下載後放的路徑/charles-proxy-ssl-proxying-certificate.pem
+export NODE_EXTRA_CA_CERTS=/你的/Charles憑證/下載後放的路徑/charles-proxy-ssl-proxying-certificate.pem
 ```
 
 
